@@ -6,54 +6,55 @@
 @import "./partials/reset";
 @import "./partials/spaziature";
 
-$font-serif: Georgia, "Times New Roman", Times, serif;
-$font-sans-serif: Arial, Helvetica, sans-serif;
-
-$size-1: 1rem;
-$size-2: 2rem;
-$size-3: 0.8rem;
-$size-4: 5rem;
 
 
 
 
 body{
-    margin: $size-2;
-    
-    padding: $size-1;
-    font-family:$font-serif ;
-    
+   
+font-family:$font-serif ;
+line-height: 1.6;
+background-color: $fondo-color;
 
 
 
-h1,
-h2,
-h3,
-.h1,
-.h2,
-.h3{
-    font-family: $font-sans-serif;
-    }
+
+
+
 }
-header{
-    display: flex;
-    justify-content: space-between;
+.container1{
+    background-color: $griglia-color;
+    min-height: 600px;
+
     
+
+
+   
     
     nav{
         display: flex;
         align-items: center;
+        justify-content: space-between;
         font-size:$size-1 ;
-        gap: $size-4;
+        margin-top: $size-2;
+        ul{
+            display: flex;
+            list-style-type: none
+        }
+        li {
+            padding: $size-1;
+          }
 
         a{
             text-decoration: none;
-            
-            border: 1px solid 
+            color: $fondo-color;   
         }
-      
-        
-       
+    }
+    &-content{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 300px;
     }
 }
 main{
@@ -63,10 +64,39 @@ main{
     }
     
     .imgtesto{
-        background-color: antiquewhite;
+       
 
         display: flex;
     }
     
 
+}
+.button{
+    margin-top: $size-1;
+    
+
+}
+button{
+    @include mybuttons();
+    
+}
+button:nth-of-type(1){
+    background-color: #0e6cff;
+}
+button:nth-of-type(2){
+    background-color:#ff8700;
+}
+button:nth-of-type(3){
+    background-color: #4caf50;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    margin-top: $size-3;
+    
+    img{
+        width: 20%;
+        border-radius: 10%;
+    }
 }
