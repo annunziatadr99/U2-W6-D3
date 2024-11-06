@@ -1,0 +1,72 @@
+@import "./partials/animazioni";
+@import "./partials/botoni";
+@import "./partials/colori";
+@import "./partials/font";
+@import "./partials/maxins-generici";
+@import "./partials/reset";
+@import "./partials/spaziature";
+
+$font-serif: Georgia, "Times New Roman", Times, serif;
+$font-sans-serif: Arial, Helvetica, sans-serif;
+
+$size-1: 1rem;
+$size-2: 2rem;
+$size-3: 0.8rem;
+$size-4: 5rem;
+
+
+
+
+body{
+    margin: $size-2;
+    
+    padding: $size-1;
+    font-family:$font-serif ;
+    
+
+
+
+h1,
+h2,
+h3,
+.h1,
+.h2,
+.h3{
+    font-family: $font-sans-serif;
+    }
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    
+    
+    nav{
+        display: flex;
+        align-items: center;
+        font-size:$size-1 ;
+        gap: $size-4;
+
+        a{
+            text-decoration: none;
+            
+            border: 1px solid 
+        }
+      
+        
+       
+    }
+}
+main{
+    
+    img{
+        width:500px ;
+    }
+    
+    .imgtesto{
+        background-color: antiquewhite;
+
+        display: flex;
+    }
+    
+
+}
